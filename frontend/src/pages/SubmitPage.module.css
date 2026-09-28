@@ -1,0 +1,120 @@
+.formCard {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--white);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  padding: 32px;
+  box-shadow: var(--shadow-sm);
+}
+
+.warningBox {
+  background-color: var(--amber-50);
+  border: 1px solid #fde68a;
+  border-left: 4px solid var(--amber-600);
+  padding: 14px 16px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 24px;
+  font-size: 13px;
+  color: var(--amber-700);
+  line-height: 1.5;
+}
+
+.errorBox {
+  background-color: var(--crimson-50);
+  border: 1px solid #fecaca;
+  border-left: 4px solid var(--crimson-600);
+  padding: 14px 16px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 24px;
+  font-size: 13px;
+  color: var(--crimson-700);
+  line-height: 1.5;
+}
+
+.row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.formActions {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.successCard {
+  background-color: var(--white);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  padding: 32px;
+}
+
+.successNotice {
+  background-color: var(--emerald-50);
+  border: 1px solid #a7f3d0;
+  border-left: 4px solid var(--emerald-600);
+  padding: 20px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 24px;
+  font-size: 14px;
+  color: var(--emerald-700);
+}
+
+.successHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--navy-900);
+}
+
+.metaRow {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.trackingToken {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 16px;
+  background-color: var(--white);
+  padding: 4px 10px;
+  border: 1px solid #a7f3d0;
+  border-radius: var(--radius-xs);
+  color: var(--navy-900);
+  display: inline-block;
+}
+
+.statusTag {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  background-color: var(--navy-900);
+  color: var(--white);
+  padding: 2px 8px;
+  border-radius: var(--radius-xs);
+}
+
+.successActions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .formCard, .successCard {
+    padding: 20px;
+  }
+  .row2 {
+    grid-template-columns: 1fr;
+  }
+}

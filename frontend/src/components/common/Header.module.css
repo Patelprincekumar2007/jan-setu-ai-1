@@ -1,0 +1,125 @@
+.header {
+  background-color: var(--navy-900);
+  border-bottom: 1px solid var(--navy-800);
+  color: var(--text-inverse);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.topBar {
+  background-color: #0b1120;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 4px 16px;
+  font-size: 12px;
+  color: var(--slate-400);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prototypeBadge {
+  background-color: rgba(217, 119, 6, 0.2);
+  color: #fbbf24;
+  padding: 2px 8px;
+  border-radius: var(--radius-xs);
+  font-weight: 500;
+  font-size: 11px;
+  border: 1px solid rgba(217, 119, 6, 0.4);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--text-inverse);
+}
+
+.brand:hover {
+  text-decoration: none;
+}
+
+.brandIcon {
+  width: 32px;
+  height: 32px;
+  background-color: #022c22;
+  border: 1px solid var(--emerald-600);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--emerald-600);
+}
+
+.brandText {
+  display: flex;
+  flex-direction: column;
+}
+
+.brandTitle {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--white);
+}
+
+.brandSubtitle {
+  font-size: 11px;
+  color: var(--slate-400);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navLink {
+  color: var(--slate-300);
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.navLink:hover {
+  color: var(--white);
+  background-color: var(--navy-800);
+  text-decoration: none;
+}
+
+.navLinkActive {
+  color: var(--white);
+  background-color: var(--navy-800);
+  border-bottom: 2px solid var(--emerald-600);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 16px;
+  }
+
+  .nav {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+}
