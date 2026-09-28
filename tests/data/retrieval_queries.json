@@ -1,0 +1,39 @@
+[
+  {
+    "query": "water problem in Dharashiv",
+    "expected_evidence_ids": [
+      "EVID-ds-jjm-water-coverage-2024-OGD-JJM-2024-MH-01"
+    ],
+    "description": "District-level water need"
+  },
+  {
+    "query": "rural tap water coverage in Maharashtra",
+    "expected_evidence_ids": [
+      "EVID-ds-jjm-water-coverage-2024-OGD-JJM-2024-MH-01",
+      "EVID-ds-jjm-water-coverage-2024-OGD-JJM-2024-MH-02",
+      "EVID-ds-jjm-water-coverage-2024-OGD-JJM-2024-MH-03",
+      "EVID-ds-jjm-water-coverage-2024-OGD-JJM-2024-MH-04",
+      "EVID-ds-jjm-water-coverage-2024-OGD-JJM-2024-MH-05"
+    ],
+    "description": "State-level natural-language water query"
+  },
+  {
+    "query": "धाराशिव में पानी की समस्या",
+    "expected_evidence_ids": [
+      "EVID-ds-jjm-water-coverage-2024-OGD-JJM-2024-MH-01"
+    ],
+    "description": "Hindi query"
+  },
+  {
+    "query": "ધારાશિવમાં પાણીની સમસ્યા",
+    "expected_evidence_ids": [
+      "EVID-ds-jjm-water-coverage-2024-OGD-JJM-2024-MH-01"
+    ],
+    "description": "Gujarati query"
+  },
+  {
+    "query": "how many roads are broken in Jaipur",
+    "expected_evidence_ids": [],
+    "description": "Irrelevant query"
+  }
+]
